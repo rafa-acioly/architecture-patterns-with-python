@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+schema = "0.7.4"
+pytest = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
