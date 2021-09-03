@@ -60,10 +60,6 @@ class Batch:
         return self.sku == line.sku and self.available_quantity >= line.qty
 
 
-class OutOfStock(Exception):
-    pass
-
-
 def allocate(line: OrderLine, batches: List[Batch]) -> str:
     batch = next(
         b for b in sorted(batches) if b.can_allocate(line)
